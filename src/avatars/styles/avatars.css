@@ -1,0 +1,48 @@
+/* 여기에 스타일을 구현해 주세요 */
+
+body {
+  margin: auto;
+}
+
+.avatarsUi {
+  width: 396px;
+  height: 195px;
+  margin: 100px;
+  background-color: #ffffff;
+
+  img {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+
+  span {
+    position: relative;
+  }
+
+  .circleOn {
+    display: inline-block;
+    position: absolute;
+    background-color: #4cfe88;
+    width: 17.778px;
+    height: 17.778px;
+    border-radius: 50%;
+    border: 1px solid white;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  .circleOff {
+    display: inline-block;
+    position: absolute;
+    background-color: #dbdbdb;
+    width: 17.778px;
+    height: 17.778px;
+    border-radius: 50%;
+    border: 1px solid white;
+    bottom: 12px;
+    right: 12px;
+  }
+}
