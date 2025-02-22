@@ -1,48 +1,45 @@
 /* 여기에 스타일을 구현해 주세요 */
 
-body {
-  margin: auto;
-}
-
 .avatarsUi {
-  width: 396px;
-  height: 195px;
-  margin: 100px;
+  width: 24.75rem;
+  height: 12.1875rem;
+  margin: 6.25rem;
   background-color: #ffffff;
 
   img {
     display: inline-block;
-    width: 64px;
-    height: 64px;
-    margin: 10px;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.625rem;
     border-radius: 50%;
   }
 
-  span {
+  div {
     position: relative;
+    display: inline-block;
   }
 
   .circleOn {
     display: inline-block;
     position: absolute;
     background-color: #4cfe88;
-    width: 17.778px;
-    height: 17.778px;
+    width: 1.1111rem;
+    height: 1.1111rem;
     border-radius: 50%;
-    border: 1px solid white;
-    bottom: 12px;
-    right: 12px;
+    border: 0.0625rem solid #ffffff;
+    bottom: 0.75rem;
+    right: 0.75rem;
   }
 
   .circleOff {
     display: inline-block;
     position: absolute;
     background-color: #dbdbdb;
-    width: 17.778px;
-    height: 17.778px;
+    width: 1.1111rem;
+    height: 1.1111rem;
     border-radius: 50%;
-    border: 1px solid white;
-    bottom: 12px;
-    right: 12px;
+    border: 0.0625rem solid #ffffff;
+    bottom: 0.75rem;
+    right: 0.75rem;
   }
 }
