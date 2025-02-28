@@ -1,0 +1,185 @@
+/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+
+body * {
+  font-size: 1rem;
+  color: #121212;
+  margin: 0;
+  padding: 0;
+}
+
+body *,
+body *::after,
+body *::before {
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.logo-naver {
+  display: block;
+  inline-size: 14.375rem;
+  margin-inline: auto;
+  margin-block-start: 4.375rem;
+  margin-block-end: 2.8125rem;
+}
+
+form {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+fieldset {
+  border: 0;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.625rem;
+  margin-inline: 1.25rem;
+
+  input {
+    display: inline-block;
+    font-size: 0.875rem;
+    block-size: 2.8125rem;
+    border: 1px solid #dadada;
+    background: #fff;
+    padding-inline: 1rem;
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+
+    &:focus {
+      border: 2px solid #03cf5d;
+      background: #e9f0fd;
+      outline: none;
+    }
+
+    @media (min-width: 48rem) {
+      max-width: 500px;
+    }
+  }
+
+  button {
+    font-size: 0.875rem;
+    block-size: 45px;
+    color: #fff;
+    background: #03cf5d;
+    margin-block-start: 0.625rem;
+    border: 0;
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+.login-state {
+  display: flex;
+  /* justify-content: end; */
+  margin-inline-end: 1.25rem;
+  margin-block-start: 0.625rem;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  .login-checkbox {
+    display: none;
+  }
+
+  .check {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.3125rem;
+
+    &.check-on {
+      display: none;
+    }
+  }
+
+  .login-checkbox:checked + label .check-on {
+    display: inline-block;
+  }
+
+  .login-checkbox:checked + label .check-off {
+    display: none;
+  }
+}
+
+.ip-state {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    position: absolute;
+    bottom: -35px;
+    right: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-inline-end: 8px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #121212;
+    text-transform: uppercase;
+  }
+
+  .ip-checkbox {
+    display: none;
+  }
+
+  .ip-on {
+    display: none;
+    color: #03cf5d;
+    font-family: "Spoqa Han Sans Neo";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  .ip-off {
+    color: #999;
+    font-family: "Spoqa Han Sans Neo";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  .ip-checkbox:checked + label .ip-on {
+    display: block;
+  }
+
+  .ip-checkbox:checked + label .ip-off {
+    display: none;
+  }
+}
