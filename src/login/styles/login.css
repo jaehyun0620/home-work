@@ -160,7 +160,7 @@ fieldset {
     display: none;
     color: #03cf5d;
     font-family: "Spoqa Han Sans Neo";
-    font-size: 14px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 21px;
@@ -169,10 +169,11 @@ fieldset {
   .ip-off {
     color: #999;
     font-family: "Spoqa Han Sans Neo";
-    font-size: 14px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 21px;
+    background: yellow;
   }
 
   .ip-checkbox:checked + label .ip-on {

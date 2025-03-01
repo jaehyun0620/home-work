@@ -38,6 +38,26 @@ form {
   max-width: 500px;
   width: 100%;
   margin-inline: auto;
+
+  .input-valied-wrapper {
+    /* 서식폼 유효성 검사 오류 메세지 서식 변경 */
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+
+    [class*="error"] {
+      color: #ff1414;
+      font-size: 0.75rem;
+      font-weight: 400;
+      display: none;
+    }
+
+    /* 왜 input의 클래스로는 제어가 안되는지 모르겠음... */
+    input:user-invalid + .email-error-msg,
+    input:user-invalid + .password-error-msg {
+      display: block;
+    }
+  }
 }
 
 fieldset {
@@ -160,7 +180,7 @@ fieldset {
     display: none;
     color: #03cf5d;
     font-family: "Spoqa Han Sans Neo";
-    font-size: 14px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 21px;
@@ -169,7 +189,7 @@ fieldset {
   .ip-off {
     color: #999;
     font-family: "Spoqa Han Sans Neo";
-    font-size: 14px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 21px;
