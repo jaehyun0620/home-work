@@ -15,6 +15,6 @@
 - [로그인 css](./src/login/styles/login.css)
 - [회고](./src/login/login.md)
 
-- [로그인 html](./src/apple/apple.html)
-- [로그인 css](./src/apple/styles/apple.css)
+- [사과 html](./src/apple/apple.html)
+- [사과 css](./src/apple/styles/apple.css)
 - [회고](./src/apple/apple.md)
