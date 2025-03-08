@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Card Component</title>
+    <link rel="icon" href="./favicon/apple-favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon/apple-favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/card-component.css" />
+  </head>
+  <body>
+    <!-- 배경 이미지 적용 테스트 -->
+    <div class="product-test">배경이미지 테스트 영역</div>
+
+    <!-- 제품 명 -->
+    <h2 class="product-name white">iPad Pro</h2>
+    <h2 class="product-name black">iPad air</h2>
+    <h2 class="product-name white">iPhone 15 Pro</h2>
+    <h2 class="product-name black">iPhone 15</h2>
+    <h2 class="product-name white">WATCH</h2>
+    <h2 class="product-name black">MacBook Air</h2>
+    <h2 class="product-name white">airPods Pro</h2>
+
+    <!-- 제품 설명 -->
+
+    <div class="product-content white">
+      <span>놀아우치만치 얇다.</span>
+      <span>엄청나게 강력하다.</span>
+    </div>
+
+    <div class="product-content black">
+      <span>두 가지 사이즈. 더 빠른 칩</span>
+      <span>무엇이든 거뜬하게.</span>
+    </div>
+
+    <div class="product-content white">
+      <span>iPhone 15 Pro.</span>
+      <span>티타늄. 초강력. 초경량. 초프로.</span>
+    </div>
+
+    <div class="product-content black">
+      <span>새로운 카메라.</span>
+      <span>새로운 디자인.</span>
+      <span>새로운이 물씬.</span>
+    </div>
+
+    <div class="product-content white">
+      <span>보다 똑똑. 보다 또렷. 보다 강력.</span>
+    </div>
+
+    <div class="product-content black">
+      <span>날렵하게. 강력하게. M3답게.</span>
+    </div>
+
+    <div class="product-content white">
+      <span>전에 없던 청취 경험.</span>
+      <span>적응형 오디오.</span>
+    </div>
+
+    <!-- 출시일 -->
+    <div class="product-date">출시일 추후 공개</div>
+
+    <!-- 버튼 -->
+
+    <button type="button" class="product-more">더 알아보기</button>
+    <button type="button" class="product-price">가격 보기</button>
+    <button type="button" class="product-more black">더 알아보기</button>
+    <button type="button" class="product-price black">가격 보기</button>
+
+    <!-- 카드 컴포넌트 -->
+
+    <div class="product-card ipad-pro">
+      <h2 class="product-name white">iPad Pro</h2>
+      <div class="product-content white">
+        <span>놀아우치만치 얇다.</span>
+        <span>엄청나게 강력하다.</span>
+      </div>
+      <div class="product-date">출시일 추후 공개</div>
+      <div class="button-wrap">
+        <button type="button" class="product-more">더 알아보기</button>
+        <button type="button" class="product-price">가격 보기</button>
+      </div>
+    </div>
+
+    <div class="product-card ipad-air">
+      <h2 class="product-name black">iPad air</h2>
+      <div class="product-content black">
+        <span>두 가지 사이즈. 더 빠른 칩</span>
+        <span>무엇이든 거뜬하게.</span>
+      </div>
+      <div class="product-date">출시일 추후 공개</div>
+      <div class="button-wrap">
+        <button type="button" class="product-more black">더 알아보기</button>
+        <button type="button" class="product-price black">가격 보기</button>
+      </div>
+    </div>
+
+    <div class="product-card iphone-pro">
+      <h2 class="product-name white">iPhone 15 Pro</h2>
+      <div class="product-content white">
+        <span>iPhone 15 Pro.</span>
+        <span>티타늄. 초강력. 초경량. 초프로.</span>
+      </div>
+      <div class="button-wrap">
+        <button type="button" class="product-more">더 알아보기</button>
+        <button type="button" class="product-price">가격 보기</button>
+      </div>
+    </div>
+
+    <div class="product-card iphone-15">
+      <h2 class="product-name black">iPhone 15</h2>
+      <div class="product-content black">
+        <span>새로운 카메라.</span>
+        <span>새로운 디자인.</span>
+        <span>새로운이 물씬.</span>
+      </div>
+
+      <div class="button-wrap">
+        <button type="button" class="product-more black">더 알아보기</button>
+        <button type="button" class="product-price black">가격 보기</button>
+      </div>
+    </div>
+
+    <div class="product-card watch">
+      <h2 class="product-name white">WATCH</h2>
+      <div class="product-content white">
+        <span>보다 똑똑. 보다 또렷. 보다 강력.</span>
+      </div>
+      <div class="button-wrap">
+        <button type="button" class="product-more">더 알아보기</button>
+        <button type="button" class="product-price">가격 보기</button>
+      </div>
+    </div>
+
+    <div class="product-card macbook-air">
+      <h2 class="product-name black">MacBook Air</h2>
+      <div class="product-content black">
+        <span>날렵하게. 강력하게. M3답게.</span>
+      </div>
+      <div class="button-wrap">
+        <button type="button" class="product-more black">더 알아보기</button>
+        <button type="button" class="product-price black">가격 보기</button>
+      </div>
+    </div>
+
+    <div class="product-card airpods-pro">
+      <h2 class="product-name white">airPods Pro</h2>
+      <div class="product-content white">
+        <span>전에 없던 청취 경험.</span>
+        <span>적응형 오디오.</span>
+      </div>
+      <div class="button-wrap">
+        <button type="button" class="product-more">더 알아보기</button>
+        <button type="button" class="product-price">가격 보기</button>
+      </div>
+    </div>
+  </body>
+</html>

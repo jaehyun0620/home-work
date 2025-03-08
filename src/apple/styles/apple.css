@@ -1,0 +1,42 @@
+@import "./card-component.css";
+
+/* 카드 레이아웃 */
+
+.card-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: var(--small-spacing);
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "ipad-pro ipad-pro"
+      "ipad-air ipad-air"
+      "iphone-pro iphone-pro"
+      "iphone-15 watch"
+      "macbook-air airpods-pro";
+
+    .ipad-pro {
+      grid-area: ipad-pro;
+    }
+
+    .ipad-air {
+      grid-area: ipad-air;
+    }
+    .iphone-pro {
+      grid-area: iphone-pro;
+    }
+    .iphone-15 {
+      grid-area: iphone-15;
+    }
+    .watch {
+      grid-area: watch;
+    }
+    .macbook-air {
+      grid-area: macbook-air;
+    }
+    .airpods-pro {
+      grid-area: airpods-pro;
+    }
+  }
+}
